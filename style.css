@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    font-size: 7em;
+    font-family: serif;
+    color: #ff0505;
+    text-align: center;
+    animation: animate
+        1.5s linear infinite;
+}
+
+span {
+    position: absolute;
+    top: 5%;
+    left: 40%;
+    font-size: 2em;
+    font-family: serif;
+    color: #0509ff;
+    background-color:  #e4d445;
+    text-align: center;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+    } 
+    50% {
+        opacity: 0.7;
+    } 
+    100% {
+        opacity: 0;
+    }
+}

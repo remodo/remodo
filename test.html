@@ -5,85 +5,19 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content=
 		"width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="styles.css" >
 
 	<title>Mom Notification</title>
 
 
 	<body onload=display_ct7();>
 		<div>
+			<span id='ct7'></span>
 			<h1>Reminder</h1>
-				<span id='ct7' style="background-color:  #e4d445"></span>
-				<h2>This is a test Heading</h2>
-				<h3>This is a paragraph.</h3>
+			<h2>This is a test Heading</h2>
+			<h3>This is a paragraph.</h3>
 		</div>
 	</body>
-
-	<style>
-		body {
-			margin: 0;
-			padding: 0;
-		}
-
-		div {
-			position: absolute;
-			top: 20%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-		}
-
-		h1 {
-			font-size: 5em;
-			font-family: serif;
-			color: #ff0505;
-			text-align: center;
-			animation: animate
-				1.5s linear infinite;
-		}
-
-		@keyframes animate {
-			0% {
-				opacity: 0;
-			} 
-			50% {
-				opacity: 0.7;
-			} 
-			100% {
-				opacity: 0;
-			}
-		}
-	</style>
-
-	<script>
-		function display_ct7() {
-		var x = new Date()
-		var ampm = x.getHours( ) >= 12 ? ' PM' : ' AM';
-		hours = x.getHours( ) % 12;
-		hours = hours ? hours : 12;
-		hours=hours.toString().length==1? 0+hours.toString() : hours;
-
-		var minutes=x.getMinutes().toString()
-		minutes=minutes.length==1 ? 0+minutes : minutes;
-
-		var seconds=x.getSeconds().toString()
-		seconds=seconds.length==1 ? 0+seconds : seconds;
-
-		var month=(x.getMonth() +1).toString();
-		month=month.length==1 ? 0+month : month;
-
-		var dt=x.getDate().toString();
-		dt=dt.length==1 ? 0+dt : dt;
-
-		var x1=month + "/" + dt + "/" + x.getFullYear(); 
-		x1 = x1 + " - " +  hours + ":" +  minutes + ":" +  seconds + " " + ampm;
-		document.getElementById('ct7').innerHTML = x1;
-		display_c7();
-	}
-	function display_c7(){
-		var refresh=1000; // Refresh rate in milli seconds
-		mytime=setTimeout('display_ct7()',refresh)
-	}
-	display_c7()
-	</script>
 
 </head>
 
