@@ -4,6 +4,7 @@ var ampm = x.getHours( ) >= 12 ? ' PM' : ' AM';
 hours = x.getHours( ) % 12;
 hours = hours ? hours : 12;
 hours=hours.toString().length==1? 0+hours.toString() : hours;
+}
 
 var minutes=x.getMinutes().toString()
 minutes=minutes.length==1 ? 0+minutes : minutes;
