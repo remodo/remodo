@@ -1,5 +1,6 @@
 // Set the date we're counting down to
-var countDownDate = new Date("Dec 5, 2021 15:37:25").getTime();
+var schedDate= new Date("Dec 5, 2021 15:37:25").getTime();
+var timeLeft
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -8,7 +9,7 @@ var x = setInterval(function() {
   var now = new Date().getTime();
     
   // Find the distance between now and the count down date
-  var distance = countDownDate - now;
+  var timeDiff = schedDate - now;
     
   // Time calculations for days, hours, minutes and seconds
   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -17,12 +18,13 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
   // Output the result in an element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
+  if days 
+  timeLeft = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+  document.getElementById("timeLeft").innerHTML = timeLeft
     
   // If the count down is over, write some text 
-  if (distance < 0) {
+  if (timeDiff < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
+    document.getElementById("timeLeft").innerHTML = "EXPIRED";
   }
-}, 1000);
+}, 30000);
