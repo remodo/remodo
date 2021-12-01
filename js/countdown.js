@@ -18,9 +18,9 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
   // Output the result in an element with id="demo"
-  if days 
-  timeLeft = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
-  document.getElementById("timeLeft").innerHTML = timeLeft
+  //if days 
+  //timeLeft = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+  //document.getElementById("timeLeft").innerHTML = timeLeft
     
   // If the count down is over, write some text 
   if (timeDiff < 0) {

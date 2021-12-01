@@ -8,6 +8,7 @@ document.getElementById("dayOfWeek").innerHTML = dayOfWeek;
 
 let ampm = now.getHours() >= 12 ? ' PM' : ' AM';
 let hr = now.getHours() % 12;
+//let hr = hr.toString().length == 1 ? 0 + hr.toString() : hr;
 let min = now.getMinutes();
 //let min = min.toString().length == 1 ? 0 + min.toString() : min;
 //let sec = now.getSeconds();
