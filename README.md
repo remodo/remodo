@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @remodo
-- 👀 I’m interested in Webdevdev, Android, microprocessor development
-- 🌱 I’m currently learning python, API development
+- 👀 I’m interested in Web development, Android, microprocessor development
+- 🌱 I’m currently learning python, HTML, Javascript, CSS, API development
 - 💞️ I’m looking to collaborate on ...
 - 📫 How to reach me ...
 
